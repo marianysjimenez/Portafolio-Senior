@@ -1,0 +1,239 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+header .btn {
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+header .btn:hover {
+  background: #fff;
+  color: #232526;
+}
+
+section h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #232526;
+}
+
+#contacto form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+
+#galeria {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+}
+
+#portfolio-gallery .card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+#portfolio-gallery .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+
+/* Timeline experiencia */
+.timeline {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 3px solid #232526;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: #232526;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.timeline-item h5 {
+  font-weight: 600;
+  color: #232526;
+}
+.timeline-item p {
+  color: #555;
+}
+
+/* Footer profesional y elegante */
+.footer {
+  background: #000;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.10);
+  position: relative;
+  overflow: hidden;
+}
+.footer-social .footer-icon {
+  color: #fff;
+  font-size: 2.2rem;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social .footer-icon:hover {
+  color: #ffc107;
+  transform: scale(1.18) rotate(-8deg);
+  text-decoration: none;
+}
+.footer-quote {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  font-style: italic;
+  letter-spacing: 0.5px;
+
+}
+.footer svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+@media (max-width: 768px) {
+  .footer-social .footer-icon { font-size: 1.5rem; }
+  .footer-quote { font-size: 0.95rem; }
+}
+
+/* Header Hero Mejorado */
+.header-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.header-slider {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.slide {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+.header-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(30, 30, 40, 0.7);
+  z-index: 3;
+}
+.header-hero .container {
+  position: relative;
+  z-index: 4;
+}
+.header-hero h1, .header-hero p, .header-hero nav {
+  text-shadow: 0 4px 24px rgba(0,0,0,0.45);
+}
+.header-hero h1 {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  animation: fadeInDown 1.2s;
+}
+.header-hero .lead {
+  font-size: 1.5rem;
+  animation: fadeInUp 1.5s;
+}
+.header-hero nav .btn {
+  font-size: 1.1rem;
+  border-width: 2px;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  animation: fadeIn 2s;
+}
+@media (max-width: 768px) {
+  .header-hero h1 { font-size: 2rem; }
+  .header-hero .lead { font-size: 1.1rem; }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.personal-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.personal-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.16);
+}
+.personal-card .bg-dark {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
+}
+.personal-card h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.personal-card small {
+  color: #bdbdbd;
+}
+.personal-card .card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #232526;
+}
+.personal-card .card-text {
+  font-size: 0.97rem;
+  color: #444;
+}
+.personal-card .btn {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+@media (max-width: 576px) {
+  .personal-card .col-md-4, .personal-card .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-radius: 0 !important;
+    text-align: center;
+    padding: 1.2rem 0 !important;
+  }
+  .personal-card .card-body {
+    padding: 0.5rem 1rem !important;
+  }
+} 

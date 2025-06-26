@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marianys Jiménez | Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header profesional mejorado -->
+  <header class="header-hero position-relative text-white text-center mb-4">
+    <div class="header-slider">
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80');"></div>
+      <div class="header-overlay"></div>
+    </div>
+    <div class="container position-relative z-2 py-5">
+      <h1 class="display-3 fw-bold mb-2 animate-fade">Marianys Jiménez</h1>
+      <p class="lead mb-4 animate-fade">Desarrolladora Web | Creativa | Innovadora</p>
+      <nav class="d-flex justify-content-center gap-3 animate-fade">
+        <a href="#contacto" class="btn btn-outline-light rounded-pill px-4">Contacto</a>
+        <a href="#galeria" class="btn btn-outline-light rounded-pill px-4">Portafolio</a>
+        <a href="#experiencia" class="btn btn-outline-light rounded-pill px-4">Experiencia</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Fin header mejorado -->
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="mb-4 text-center">Contacto</h2>
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+        <div id="contacto-exito" class="alert alert-success mt-3 d-none" role="alert">
+          ¡Mensaje enviado con éxito!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería de Portafolio -->
+  <section id="galeria" class="bg-light py-5 mb-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Mi Galería de Portafolio</h2>
+      <div class="row g-4" id="portfolio-gallery">
+        <!-- Proyectos de portafolio se insertarán aquí con JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experiencia" class="container mb-5">
+    <h2 class="mb-4 text-center">Experiencia</h2>
+    <div class="timeline">
+      <!-- Experiencia se insertará aquí con JS -->
+    </div>
+  </section>
+
+  <!-- Footer profesional y elegante -->
+  <footer class="footer mt-auto py-5 bg-gradient text-white text-center position-relative">
+    <div class="container position-relative z-2">
+      <div class="footer-social mb-3 d-flex justify-content-center gap-4">
+        <a href="#" class="footer-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="footer-icon" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#" class="footer-icon" title="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="footer-info mb-3">
+        <span class="d-block mb-1"><strong>Marianys Jiménez</strong> | Caracas, Venezuela</span>
+        <span class="d-block mb-1">Desarrolladora Web Frontend &amp; UI/UX</span>
+        <a href="cv-marianys-jimenez.pdf" class="btn btn-outline-light btn-sm rounded-pill mt-2" target="_blank">Ver mi CV</a>
+      </div>
+      <div class="footer-quote mb-3">
+        <em>"La creatividad es la inteligencia divirtiéndose."</em>
+      </div>
+      <p class="mb-0 small">&copy; 2024 Marianys Jiménez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Onda decorativa fuera del footer para que no tape el texto -->
+  <div class="footer-wave position-relative w-100" style="height:60px; margin-top:-10px; z-index:1;">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#232526" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,53.3C480,53,600,43,720,37.3C840,32,960,32,1080,37.3C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+  </div>
+  <!-- Fin footer profesional y elegante -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
